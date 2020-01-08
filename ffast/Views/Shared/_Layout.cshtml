@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    @*<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>@ViewData["Title"] - Projeto_02</title>
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/site.css" />*@
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Labflow</title>
+    <link href="http://themesindustry.com/html/trax-2019/images/favicon.ico" rel="icon">
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/all.min.css" rel="stylesheet" />
+    <link href="~/css/animate.min.css" rel="stylesheet" />
+    <link href="~/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="~/css/jquery.fancybox.min.css" rel="stylesheet" />
+    <link href="~/css/tooltipster.min.css" rel="stylesheet" />
+    <link href="~/css/cubeportfolio.min.css" rel="stylesheet" />
+    <link href="~/css/revolution/navigation.css" rel="stylesheet" />
+    <link href="~/css/revolution/settings.css" rel="stylesheet" />
+    <link href="~/css/style.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/351514d2c7.js" crossorigin="anonymous"></script>
+</head>
+<body data-spy="scroll" data-target=".navbar-nav" data-offset="75" class="offset-nav">
+    <!--PreLoader-->
+    <div class="loader">
+        <div class="loader-inner">
+            <div class="cssload-loader"></div>
+        </div>
+    </div>
+    <!--PreLoader Ends-->
+    <!-- header -->
+    <header class="site-header" id="header">
+        <nav class="navbar navbar-expand-lg transparent-bg static-nav">
+            <div class="container">
+                <a class="navbar-brand" href="http://themesindustry.com/html/trax-2019/index.html">
+                    <img src="http://themesindustry.com/html/trax-2019/images/logo-transparent.png" alt="logo" class="logo-default">
+                    <img src="http://themesindustry.com/html/trax-2019/images/logo.png" alt="logo" class="logo-scrolled">
+                </a>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav mx-auto ml-xl-auto mr-xl-0">
+                        <li class="nav-item">
+                            <a class="nav-link active pagescroll" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link pagescroll scrollupto" href="#about">Sobre</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link pagescroll" href="#pricing">Our Pricing</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link pagescroll" href="#portfolio">Portifólio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link pagescroll" href="#blog">Notícias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link pagescroll" href="#contact">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--side menu open button-->
+            <a href="javascript:void(0)" class="d-inline-block sidemenu_btn" id="sidemenu_toggle">
+                <span></span> <span></span> <span></span>
+            </a>
+        </nav>
+        <!-- side menu -->
+        <div class="side-menu opacity-0 gradient-bg">
+            <div class="overlay"></div>
+            <div class="inner-wrapper">
+                <span class="btn-close btn-close-no-padding" id="btn_sideNavClose"><i></i><i></i></span>
+                <nav class="side-nav w-100">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active pagescroll" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link pagescroll scrollupto" href="#about">Sobre</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link pagescroll" href="#pricing">Our Pricing</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link pagescroll" href="#portfolio">Portfólio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link pagescroll" href="#blog">Notícias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link pagescroll" href="#contact">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="side-footer w-100">
+                    <ul class="social-icons-simple white top40">
+                        <li><a href="javascript:void(0)" class="facebook"><i class="fab fa-facebook-f"></i> </a> </li>
+                        <li><a href="javascript:void(0)" class="twitter"><i class="fab fa-twitter"></i> </a> </li>
+                        <li><a href="javascript:void(0)" class="insta"><i class="fab fa-instagram"></i> </a> </li>
+                    </ul>
+                    <p class="whitecolor">&copy; <span id="year"></span> Trax. Made With Love by ThemesIndustry</p>
+                </div>
+            </div>
+        </div>
+        <div id="close_side_menu" class="tooltip"></div>
+        <!-- End side menu -->
+    </header>
+    <!-- header -->
+    @RenderBody()
+    <!--Site Footer Here-->
+    <footer id="site-footer" class=" bgdark padding_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer_panel padding_bottom_half bottom20">
+                        <a href="http://themesindustry.com/html/trax-2019/index.html" class="footer_logo bottom25"><img src="http://themesindustry.com/html/trax-2019/images/logo-transparent.png" alt="trax"></a>
+                        <p class="whitecolor bottom25">Keep away from people who try to belittle your ambitions Small people always do that but the really great Friendly.</p>
+                        <div class="d-table w-100 address-item whitecolor bottom25">
+                            <span class="d-table-cell align-middle"><i class="fas fa-mobile-alt"></i></span>
+                            <p class="d-table-cell align-middle bottom0">
+                                +01 - 123 - 4567 <a class="d-block" href="mailto:web@support.com">web@support.com</a>
+                            </p>
+                        </div>
+                        <ul class="social-icons white wow fadeInUp" data-wow-delay="300ms">
+                            <li><a href="javascript:void(0)" class="facebook"><i class="fab fa-facebook-f"></i> </a> </li>
+                            <li><a href="javascript:void(0)" class="twitter"><i class="fab fa-twitter"></i> </a> </li>
+                            <li><a href="javascript:void(0)" class="linkedin"><i class="fab fa-linkedin-in"></i> </a> </li>
+                            <li><a href="javascript:void(0)" class="insta"><i class="fab fa-instagram"></i> </a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer_panel padding_bottom_half bottom20">
+                        <h3 class="whitecolor bottom25">Latest News</h3>
+                        <ul class="latest_news whitecolor">
+                            <li> <a href="#.">Aenean tristique justo et... </a> <span class="date defaultcolor">15 March 2019</span> </li>
+                            <li> <a href="#.">Phasellus dapibus dictum augue... </a> <span class="date defaultcolor">15 March 2019</span> </li>
+                            <li> <a href="#.">Mauris blandit vitae. Praesent non... </a> <span class="date defaultcolor">15 March 2019</span> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer_panel padding_bottom_half bottom20 pl-0 pl-lg-5">
+                        <h3 class="whitecolor bottom25">Navigation</h3>
+                        <ul class="links">
+                            <li><a href="#home" class="pagescroll">Home</a></li>
+                            <li><a href="#about" class="pagescroll scrollupto">About Us</a></li>
+                            <li><a href="#pricing" class="pagescroll">Our Pricing</a></li>
+                            <li><a href="#portfolio" class="pagescroll">Portfolio</a></li>
+                            <li><a href="#blog" class="pagescroll">Our Blog</a></li>
+                            <li><a href="#contact" class="pagescroll">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer_panel padding_bottom_half bottom20">
+                        <h3 class="whitecolor bottom25">Business hours</h3>
+                        <p class="whitecolor bottom25">Our support available to help you 24 hours a day, seven days week</p>
+                        <ul class="hours_links whitecolor">
+                            <li><span>Monday-Saturday:</span> <span>8.00-18.00</span></li>
+                            <li><span>Friday:</span> <span>09:00-21:00</span></li>
+                            <li><span>Sunday:</span> <span>09:00-20:00</span></li>
+                            <li><span>Calendar Events:</span> <span>24-Hour Shift</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Footer ends-->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="~/lib/jquery/dist/jquery-3.4.1.min.js"></script>
+    <!--Bootstrap Core-->
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/js/propper.min.js"></script>
+    <!--to view items on reach-->
+    <script src="~/js/jquery.appear.js"></script>
+    <!--Owl Slider-->
+    <script src="~/js/owl.carousel.min.js"></script>
+    <!--number counters-->
+    <script src="~/js/jquery-countTo.js"></script>
+    <!--Parallax Background-->
+    <script src="~/js/parallaxie.js"></script>
+    <!--Cubefolio Gallery-->
+    <script src="~/js/jquery.cubeportfolio.min.js"></script>
+    <!--Fancybox js-->
+    <script src="~/js/jquery.fancybox.min.js"></script>
+    <!--Tooltip js-->
+    <script src="~/js/tooltipster.min.js"></script>
+    <!--wow js-->
+    <script src="~/js/wow.js"></script>
+    <!--Revolution SLider-->
+    <script src="~/js/revolution/jquery.themepunch.revolution.min.js"></script>
+    <script src="~/js/revolution/jquery.themepunch.tools.min.js"></script>
+    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS -->
+
+    <script src="~/js/revolution/extensions/revolution.extension.actions.min.js"></script>
+    <script src="~/js/revolution/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="~/js/revolution/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="~/js/revolution/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="~/js/revolution/extensions/revolution.extension.migration.min.js"></script>
+    <script src="~/js/revolution/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="~/js/revolution/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="~/js/revolution/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="~/js/revolution/extensions/revolution.extension.video.min.js"></script>
+    <!--map js-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgIfLQi8KTxTJahilcem6qHusV-V6XXjw"></script>
+    <script src="./script/map.js"></script>
+    <!--custom functions and script-->
+    <script src="~/js/functions.js"></script>
+
+    @*@RenderSection("Scripts", required: false)*@
+</body>
+</html>
